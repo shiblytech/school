@@ -47,8 +47,8 @@ dependencies {
     implementation 'androidx.navigation:navigation-ui:2.3.2'
     implementation 'androidx.room:room-runtime:2.2.2'
     implementation 'com.google.android.gms:play-services-location:15.0.1'
-    implementation ('eu.livotov.labs.android:CAMView:2.0.1@aar') {transitive=true} // used for QRScanner
-    implementation 'androidmads.library.qrgenearator:QRGenearator:1.0.3' // used for QRGenerator
+    //implementation ('eu.livotov.labs.android:CAMView:2.0.1@aar') {transitive=true} // used for QRScanner
+    //implementation 'androidmads.library.qrgenearator:QRGenearator:1.0.3' // used for QRGenerator
     implementation 'com.google.apis:google-api-services-drive:v3-rev136-1.25.0' // used for google drive
     implementation 'com.google.android.gms:play-services-auth:20.6.0' // used for google drive
     implementation 'com.google.api-client:google-api-client-android:1.31.0'
