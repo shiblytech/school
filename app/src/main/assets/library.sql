@@ -19,14 +19,13 @@ CREATE TABLE dbconf (
     )
 );
 
-CREATE TABLE student (
+CREATE TABLE book (
 -- All tables must have this id field
     id        BIGINT (20)    NOT NULL,
-    indexNo     VARCHAR (50) DEFAULT NULL,
-    fName     VARCHAR (100)  DEFAULT NULL,
-    lName     VARCHAR (100)  DEFAULT NULL,
-    address   VARCHAR (255)  DEFAULT NULL,
-    age       INT (3)        DEFAULT NULL,
+    bookNo     INT (4) DEFAULT NULL,
+    bookName     VARCHAR (100)  DEFAULT NULL,
+    bookAuthor     VARCHAR (100)  DEFAULT NULL,
+    bookBarcode   INT (10)  DEFAULT NULL,
     PRIMARY KEY (
         id
     )

@@ -1,4 +1,4 @@
-package school.app;
+package library.app;
 
 
 import android.content.Intent;
@@ -16,7 +16,7 @@ import com.androix.U;
 
 
 public final class MainActivity extends AbstractMainActivity {
-    public static final String app = "school";
+    public static final String app = "library";
 
     public void init() {
         init(R.layout.activity_main);
@@ -37,7 +37,7 @@ public final class MainActivity extends AbstractMainActivity {
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
         super.onCreate(savedInstanceState);
         init();
-        navigate(StudentRegUI.class);
+        navigate(BookRegUI.class);
     }
 
 

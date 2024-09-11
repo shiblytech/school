@@ -2,7 +2,7 @@
  * To change this school, choose Tools | Templates
  * and open the school in the editor.
  */
-package school.util;
+package library.util;
 
 import java.math.BigDecimal;
 

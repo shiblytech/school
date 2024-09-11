@@ -1,4 +1,4 @@
-package school.app;
+package library.app;
 
 import android.content.Intent;
 

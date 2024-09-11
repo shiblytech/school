@@ -6,19 +6,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".StudentRegUI">
+    tools:context=".BookRegUI">
 
     <LinearLayout
         android:id="@+id/linearLayout11"
         android:layout_width="match_parent"
         android:layout_height="350dp"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp"
-        tools:ignore="MissingConstraints">
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="1dp">
 
         <EditText
-            android:id="@+id/student_indexNo"
+            android:id="@+id/book_bookNo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
@@ -28,11 +28,11 @@
             android:layout_marginRight="24dp"
             android:layout_marginBottom="10dp"
             android:ems="10"
-            android:hint="Index number"
-            android:inputType="text"/>
+            android:hint="Book Number"
+            android:inputType="number" />
 
         <EditText
-            android:id="@+id/student_fName"
+            android:id="@+id/book_bookName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
@@ -42,11 +42,25 @@
             android:layout_marginRight="24dp"
             android:layout_marginBottom="10dp"
             android:ems="10"
-            android:hint="First Name"
+            android:hint="Book Name"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/book_bookAuthor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:hint="Book Author"
             android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/student_lName"
+            android:id="@+id/book_bookBarcode"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
@@ -56,37 +70,8 @@
             android:layout_marginRight="24dp"
             android:layout_marginBottom="10dp"
             android:ems="10"
-            android:hint="Last Name"
-            android:inputType="textPersonName" />
-
-        <EditText
-            android:id="@+id/student_address"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginLeft="24dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="24dp"
-            android:layout_marginRight="24dp"
-            android:layout_marginBottom="10dp"
-            android:ems="10"
-            android:hint="Address"
-            android:importantForAutofill="no"
-            android:inputType="textPostalAddress" />
-
-        <EditText
-            android:id="@+id/student_age"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginLeft="24dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="24dp"
-            android:layout_marginRight="24dp"
-            android:layout_marginBottom="10dp"
-            android:ems="10"
-            android:hint="Age"
-            android:inputType="numberDecimal" />
+            android:hint="Barcode"
+            android:inputType="text" />
     </LinearLayout>
 
     <LinearLayout
@@ -105,12 +90,6 @@
             android:layout_weight="1"
             android:text="Save" />
 
-        <Button
-            android:id="@+id/find"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Find" />
     </LinearLayout>
 
     <LinearLayout
@@ -124,17 +103,11 @@
 
         <Button
             android:id="@+id/clear"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Clear" />
 
-        <Button
-            android:id="@+id/update"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Update" />
     </LinearLayout>
 
 

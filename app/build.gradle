@@ -2,11 +2,11 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 33
-    namespace "school.app"
+    namespace "library.app"
 
 
     defaultConfig {
-        applicationId "school.app"
+        applicationId "library.app"
         minSdkVersion 16
         targetSdkVersion 33
         versionCode 1

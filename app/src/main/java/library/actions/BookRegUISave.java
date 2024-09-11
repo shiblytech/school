@@ -1,15 +1,14 @@
-package school.actions;
+package library.actions;
 
-import com.androix.FBaseAction;
 import com.androix.SaveAction;
 
-import school.app.F;
-import school.model.Student;
+import library.app.F;
+import library.model.Book;
 
-public class StudentRegUISave extends SaveAction {
+public class BookRegUISave extends SaveAction {
     @Override
     public void execute() throws Exception {
-        Student s = (Student) getViewModel("Student");
+        Book s = (Book) getViewModel("Book");
         s.setId(2L);  //id is not available in the View
         F.persist(s);
         addMessage("msg","Student saved successfully");

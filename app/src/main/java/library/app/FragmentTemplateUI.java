@@ -1,4 +1,4 @@
-package school.app;
+package library.app;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,7 +9,9 @@ import androidx.annotation.NonNull;
 
 import com.androix.Fragmentx;
 
-public class StudentRegUI extends Fragmentx {
+import library.app.R;
+
+public class FragmentTemplateUI extends Fragmentx {
     @Override
     public View onCreateView(
             LayoutInflater inflater, ViewGroup container,
@@ -17,7 +19,7 @@ public class StudentRegUI extends Fragmentx {
     ) {
 
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.studentreg_ui, container, false);
+        return inflater.inflate(R.layout.fragmenttemplate_ui, container, false);
     }
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {

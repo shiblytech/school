@@ -1,4 +1,4 @@
-package school.app;
+package library.app;
 
 import org.junit.Test;
 
