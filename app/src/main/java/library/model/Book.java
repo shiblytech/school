@@ -3,10 +3,12 @@ package library.model;
 import com.androix.model.Identifiable;
 
 public class Book extends Identifiable {
+
     private Integer bookNo;
     private String bookName;
     private String bookAuthor;
     private String bookBarcode;
+
 
     public Integer getBookNo() {
         return bookNo;
