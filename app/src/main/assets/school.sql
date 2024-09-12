@@ -32,6 +32,18 @@ CREATE TABLE student (
     )
 );
 
+CREATE TABLE book (
+-- All tables must have this id field
+    id        BIGINT (20)    NOT NULL,
+    bookNo     VARCHAR (50) DEFAULT NULL,
+    bookName     VARCHAR (100)  DEFAULT NULL,
+    authorName     VARCHAR (100)  DEFAULT NULL,
+    barcode   VARCHAR (255)  DEFAULT NULL,
+    PRIMARY KEY (
+        id
+    )
+);
+
 INSERT INTO dbconf (id,dkey, dvalue) VALUES (1, "version", 1);
 COMMIT TRANSACTION;
 PRAGMA foreign_keys = on;
