@@ -114,4 +114,22 @@
 
     </LinearLayout>
 
+    <LinearLayout
+        android:id="@+id/linearLayout12"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout13"
+        tools:layout_editor_absoluteX="1dp">
+
+        <Button
+            android:id="@+id/find"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Find" />
+
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
