@@ -4,20 +4,21 @@ import com.androix.model.Identifiable;
 
 public class Book extends Identifiable {
 
-    private Long id;
+    //no need to create id. because when we extends it will inherit to here.
+    //private Long id;
     private String bookNo;
     private String bookName;
     private String authorName;
     private String barcode;
 
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
+//    public Long getId() {
+//        return id;
+//    }
+//
+//    public void setId(Long id) {
+//        this.id = id;
+//    }
 
     public String getBookNo() {
         return bookNo;
