@@ -11,5 +11,6 @@ public class BookRegUISave extends SaveAction {
         Book book = (Book) getViewModel("Book");
         F.persist(book);
         addMessage("msg","Book saved successfully");
+        updateViewModel("Book", null);
     }
 }
