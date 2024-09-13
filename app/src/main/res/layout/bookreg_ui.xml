@@ -40,14 +40,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Book Name"
-            android:inputType="text" />
+            android:inputType="text"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"/>
 
         <EditText
             android:id="@+id/book_bookAuthor"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Book Author"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"/>
 
         <EditText
             android:id="@+id/book_bookBarcode"
