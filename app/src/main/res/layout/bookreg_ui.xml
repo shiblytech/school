@@ -64,7 +64,7 @@
         android:layout_height="154dp"
         android:orientation="horizontal"
         android:paddingTop="24dp"
-        android:weightSum="3"
+        android:weightSum="4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -99,6 +99,15 @@
             android:layout_weight="1"
             android:background="@color/gray"
             android:text="Find"
+            android:textColor="#000000" />
+        <Button
+            android:id="@+id/update"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:background="@color/gray"
+            android:text="Update"
             android:textColor="#000000" />
 
 
