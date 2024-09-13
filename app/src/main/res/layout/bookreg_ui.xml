@@ -25,7 +25,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Book Id"
-            android:inputType="number" />
+            android:inputType="number"
+            android:maxLength="8"/>
 
         <EditText
             android:id="@+id/book_bookNo"
@@ -53,7 +54,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Barcode"
-            android:inputType="number" />
+            android:inputType="number"
+            android:maxLength="13"/>
 
     </LinearLayout>
 
@@ -64,7 +66,7 @@
         android:layout_height="154dp"
         android:orientation="horizontal"
         android:paddingTop="24dp"
-        android:weightSum="4"
+        android:weightSum="5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -108,6 +110,15 @@
             android:layout_weight="1"
             android:background="@color/gray"
             android:text="Update"
+            android:textColor="#000000" />
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:background="@color/gray"
+            android:text="Delete"
             android:textColor="#000000" />
 
 
