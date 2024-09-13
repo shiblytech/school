@@ -18,7 +18,14 @@ public class BookRegUIFind extends FBaseAction {
     }
     private boolean validate(){
         Book book = (Book) getViewModel("Book");
-        if(book.getId() == null){
+        if(book.getId() != null){
+            Long bId = book.getId();
+            Book book2 = F.find(Book.class,bId);
+            if(book2 == null){
+                addMessage("msg","No such Book ID.");
+                return false;
+            }
+        }else{
             addMessage("msg","Enter the ID.");
             return false;
         }
