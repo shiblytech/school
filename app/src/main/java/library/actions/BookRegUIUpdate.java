@@ -29,9 +29,9 @@ public class BookRegUIUpdate extends FBaseAction {
             return;
         }
 
-        F.persist(s);
+        F.update(s);
         updateViewModel("Book", null);
-        addMessage("msg","Book saved successfully");
+        addMessage("msg","Book Updated successfully");
 
     }
 }
