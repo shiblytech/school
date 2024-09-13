@@ -1,8 +1,12 @@
 package school.actions;
 
+import android.text.Editable;
+import android.text.TextWatcher;
+
 import com.androix.SaveAction;
 
 import school.app.F;
+import school.app.R;
 import school.model.Book;
 
 public class BookRegUISave extends SaveAction {
@@ -31,6 +35,15 @@ public class BookRegUISave extends SaveAction {
             addMessage("msg","Please enter the barcode number");
             return false;
         }
+        if(book.getId().toString().trim().length() != 8){
+            addMessage("msg","ID number must be 8 digit.");
+            return false;
+        }
+        if(book.getBarcode().trim().length() != 13){
+            addMessage("msg","Barcode number must be 13 digit.");
+            return false;
+        }
+
         return true;
     }
 }

@@ -27,6 +27,14 @@ public class BookRegUIUpdate extends SaveAction {
                 addMessage("msg","Please enter the barcode number");
                 return false;
             }
+            if(book.getId().toString().trim().length() != 8){
+                addMessage("msg","ID number must be 8 digit.");
+                return false;
+            }
+            if(book.getBarcode().trim().length() != 13){
+                addMessage("msg","Barcode number must be 13 digit.");
+                return false;
+            }
         }
         else{
             addMessage("msg","Find the index first.");

@@ -28,7 +28,7 @@
             android:layout_marginRight="24dp"
             android:ems="10"
             android:hint="ID"
-            android:inputType="text"/>
+            android:inputType="numberDecimal"/>
 
         <EditText
             android:id="@+id/book_bookNo"
@@ -42,7 +42,8 @@
             android:layout_marginBottom="10dp"
             android:ems="10"
             android:hint="Book Number"
-            android:inputType="text"/>
+            android:inputType="text"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"/>
 
         <EditText
             android:id="@+id/book_bookName"
@@ -56,7 +57,8 @@
             android:layout_marginBottom="10dp"
             android:ems="10"
             android:hint="Book Name"
-            android:inputType="text" />
+            android:inputType="text"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"/>
 
         <EditText
             android:id="@+id/book_authorName"
@@ -70,7 +72,8 @@
             android:layout_marginBottom="10dp"
             android:ems="10"
             android:hint="Author Name"
-            android:inputType="textPersonName" />
+            android:inputType="text"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"/>
 
         <EditText
             android:id="@+id/book_barcode"
@@ -85,7 +88,7 @@
             android:ems="10"
             android:hint="Barcode"
             android:importantForAutofill="no"
-            android:inputType="text" />
+            android:inputType="numberDecimal" />
 
     </LinearLayout>
 
