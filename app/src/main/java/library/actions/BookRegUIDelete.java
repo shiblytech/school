@@ -1,10 +1,12 @@
 package library.actions;
 
 import com.androix.FBaseAction;
+import com.androix.SaveAction;
+
 import library.app.F;
 import library.model.Book;
 
-public class BookRegUIDelete extends FBaseAction {
+public class BookRegUIDelete extends SaveAction {
     @Override
     public void execute() throws Exception {
         Book book = (Book) getViewModel("Book");

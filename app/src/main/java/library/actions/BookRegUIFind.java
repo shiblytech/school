@@ -12,6 +12,11 @@ public class BookRegUIFind extends FBaseAction {
         Long bookId = book.getId();
         Book book1 = F.find(Book.class,bookId);
 
+        if (book1 == null) {
+            addMessage("msg", "theres no records in db");
+            return;
+        }
+
         updateViewModel("Book",book1);
 
     }

@@ -1,11 +1,12 @@
 package library.actions;
 
 import com.androix.FBaseAction;
+import com.androix.SaveAction;
 
 import library.app.F;
 import library.model.Book;
 
-public class BookRegUIUpdate extends FBaseAction {
+public class BookRegUIUpdate extends SaveAction {
     @Override
     public void execute() throws Exception {
         Book s = (Book) getViewModel("Book");
