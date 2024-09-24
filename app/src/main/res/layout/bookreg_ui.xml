@@ -10,120 +10,164 @@
 
 
     <LinearLayout
-        android:id="@+id/linearLayout11"
-        android:layout_width="0dp"
+        android:id="@+id/layoutBookId"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="16dp"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout12">
+        android:layout_marginTop="16dp"
+        tools:ignore="MissingConstraints">
 
         <EditText
             android:id="@+id/book_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Book Id"
-            android:inputType="number"
-            android:maxLength="8"/>
+            android:hint="Book ID"
+            android:inputType="text"
+            android:maxLength="8"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_alignTop="@+id/layoutBookId"
+            android:layout_alignParentRight="true"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layoutBookNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintTop_toBottomOf="@id/layoutBookId"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp">
 
         <EditText
             android:id="@+id/book_bookNo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Book Number"
-            android:inputType="number" />
+            android:inputType="text" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layoutBookName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintTop_toBottomOf="@id/layoutBookNo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp">
 
         <EditText
             android:id="@+id/book_bookName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Book Name"
-            android:inputType="text"
-            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"/>
+            android:inputType="text" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layoutBookAuthor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintTop_toBottomOf="@id/layoutBookName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp">
 
         <EditText
             android:id="@+id/book_bookAuthor"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Book Author"
-            android:inputType="textPersonName"
-            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"/>
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layoutBookBarcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintTop_toBottomOf="@id/layoutBookAuthor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp">
 
         <EditText
             android:id="@+id/book_bookBarcode"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Barcode"
-            android:inputType="number"
+            android:inputType="text"
             android:maxLength="13"/>
-
     </LinearLayout>
 
 
-    <LinearLayout
-        android:id="@+id/linearLayout12"
-        android:layout_width="412dp"
-        android:layout_height="154dp"
-        android:orientation="horizontal"
-        android:paddingTop="24dp"
-        android:weightSum="5"
-        app:layout_constraintBottom_toBottomOf="parent"
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Clear"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.099"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.751">
+        app:layout_constraintTop_toBottomOf="@id/layoutBookBarcode" />
 
-        <Button
-            android:id="@+id/save"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:layout_weight="1"
-            android:background="@color/gray"
-            android:text="Save"
-            android:textColor="#000000" />
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutBookBarcode" />
 
-        <Button
-            android:id="@+id/clear"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@color/gray"
-            android:text="Clear"
-            android:textColor="#000000" />
+    <Button
+        android:id="@+id/find"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Find"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutBookBarcode" />
 
-        <Button
-            android:id="@+id/find"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_weight="1"
-            android:background="@color/gray"
-            android:text="Find"
-            android:textColor="#000000" />
-        <Button
-            android:id="@+id/update"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_weight="1"
-            android:background="@color/gray"
-            android:text="Update"
-            android:textColor="#000000" />
-        <Button
-            android:id="@+id/delete"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_weight="1"
-            android:background="@color/gray"
-            android:text="Delete"
-            android:textColor="#000000" />
+    <Button
+        android:id="@+id/update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Update"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/save" />
 
-
-    </LinearLayout>
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Delete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clear" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,6 +1,5 @@
 package library.app;
 
-
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
@@ -14,21 +13,19 @@ import com.androix.AbstractMainActivity;
 import com.androix.NPersistence;
 import com.androix.U;
 
-
 public final class MainActivity extends AbstractMainActivity {
     public static final String app = "library";
 
     public void init() {
         init(R.layout.activity_main);
         F.init(this);
-        NPersistence.createDBIfNotExist(app+".sql", "1");
+        NPersistence.createDBIfNotExist(app + ".sql", "1");
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED);
         Intent intent = this.getIntent();
         U.checkAndRequestPermissions(MainActivity.this);
     }
-
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -40,15 +37,14 @@ public final class MainActivity extends AbstractMainActivity {
         navigate(BookRegUI.class);
     }
 
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
-
     }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-                return super.onOptionsItemSelected(item);
+        return super.onOptionsItemSelected(item);
     }
 }
