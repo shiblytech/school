@@ -1,7 +1,5 @@
 package school.actions;
 
-import android.text.Editable;
-import android.text.TextWatcher;
 
 import com.androix.SaveAction;
 
