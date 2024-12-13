@@ -44,6 +44,17 @@ CREATE TABLE book (
     )
 );
 
+CREATE Table item (
+    id          BIGINT (20)     NOT NULL,
+    itemName    VARCHAR (50)    DEFAULT NULL,
+    price       FLOAT (20)    DEFAULT NULL,
+    batch       VARCHAR (50)    DEFAULT NULL,
+    barcode     VARCHAR (255)   DEFAULT NULL,
+    PRIMARY KEY (
+        id
+    )
+);
+
 INSERT INTO dbconf (id,dkey, dvalue) VALUES (1, "version", 1);
 COMMIT TRANSACTION;
 PRAGMA foreign_keys = on;
