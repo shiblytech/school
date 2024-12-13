@@ -43,7 +43,17 @@ CREATE TABLE book (
         id
     )
 );
-
+CREATE TABLE item (
+-- All tables must have this id field
+    id        BIGINT (20)    NOT NULL,
+    itemNo    VARCHAR (50) DEFAULT NULL,
+    itemName     VARCHAR (100)  DEFAULT NULL,
+    itemQuantity   VARCHAR (100) DEFAULT NULL,
+    itemPrice     FLOAT (50) DEFAULT NULL,
+    itemDistributor VARCHAR(100) DEFAULT NULL,
+    PRIMARY KEY(
+    id)
+    );
 INSERT INTO dbconf (id,dkey, dvalue) VALUES (1, "version", 1);
 COMMIT TRANSACTION;
 PRAGMA foreign_keys = on;

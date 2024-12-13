@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ItemRegUI"
+    android:orientation="vertical"
+    tools:context=".ItemRegUI">
+
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:text="Item Registration"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="129dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <EditText
+        android:id="@+id/itemNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Item ID"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="54dp" />
+
+    <EditText
+        android:id="@+id/itemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Item Name"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="127dp" />
+
+    <EditText
+        android:id="@+id/itemQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Item Quantity"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="202dp" />
+
+    <EditText
+        android:id="@+id/itemPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Item Price"
+        android:inputType="numberDecimal"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="267dp" />
+
+    <EditText
+        android:id="@+id/itemDistributor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Item Distributor"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="343dp" />
+
+    <Button
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="454dp" />
+
+    <Button
+        android:id="@+id/clear"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        tools:layout_editor_absoluteX="258dp"
+        tools:layout_editor_absoluteY="454dp" />
+
+    <Button
+        android:id="@+id/find"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find"
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="556dp" />
+
+    <Button
+        android:id="@+id/update"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        tools:layout_editor_absoluteX="258dp"
+        tools:layout_editor_absoluteY="556dp" />
+
+    <Button
+        android:id="@+id/remove"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remove"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="637dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
