@@ -8,6 +8,15 @@
     android:orientation="vertical"
     tools:context=".ItemRegUI">
 
+    <LinearLayout
+        android:id="@+id/linearLayout15"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+
+
+        tools:layout_editor_absoluteX="1dp">
 
 
     <TextView
@@ -19,8 +28,23 @@
         android:textAlignment="center"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="20dp"
-        tools:layout_editor_absoluteX="129dp"
-        tools:layout_editor_absoluteY="16dp" />
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="10dp"   />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout11"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout15">
+
 
     <EditText
         android:id="@+id/itemNo"
@@ -30,8 +54,12 @@
         android:hint="Item ID"
         android:importantForAutofill="no"
         android:inputType="numberDecimal"
-        tools:layout_editor_absoluteX="3dp"
-        tools:layout_editor_absoluteY="54dp" />
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="10dp" />
 
     <EditText
         android:id="@+id/itemName"
@@ -41,8 +69,12 @@
         android:hint="Item Name"
         android:importantForAutofill="no"
         android:inputType="text"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="127dp" />
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="10dp" />
 
     <EditText
         android:id="@+id/itemQuantity"
@@ -51,8 +83,12 @@
         android:ems="10"
         android:hint="Item Quantity"
         android:inputType="text"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="202dp" />
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="10dp" />
 
     <EditText
         android:id="@+id/itemPrice"
@@ -61,8 +97,12 @@
         android:ems="10"
         android:hint="Item Price"
         android:inputType="numberDecimal"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="267dp" />
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="10dp" />
 
     <EditText
         android:id="@+id/itemDistributor"
@@ -71,17 +111,30 @@
         android:ems="10"
         android:hint="Item Distributor"
         android:inputType="text"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="343dp" />
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="10dp" />
+    </LinearLayout>
 
+    <LinearLayout
+        android:id="@+id/linearLayout13"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout11"
+        tools:layout_editor_absoluteX="1dp">
     <Button
         android:textColor="@color/colorPrimaryDark"
         android:id="@+id/save"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Save"
-        tools:layout_editor_absoluteX="53dp"
-        tools:layout_editor_absoluteY="454dp" />
+        android:layout_weight="1"
+       />
 
     <Button
         android:id="@+id/clear"
@@ -90,16 +143,26 @@
         android:layout_height="wrap_content"
         android:text="Clear"
         tools:layout_editor_absoluteX="258dp"
-        tools:layout_editor_absoluteY="454dp" />
+        tools:layout_editor_absoluteY="454dp"
+        android:layout_weight="1"/>
+    </LinearLayout>
 
+
+    <LinearLayout
+        android:id="@+id/linearLayout12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout13"
+        >
     <Button
         android:id="@+id/find"
         android:textColor="@color/colorPrimaryDark"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Find"
-        tools:layout_editor_absoluteX="53dp"
-        tools:layout_editor_absoluteY="556dp" />
+        android:layout_weight="1" />
 
     <Button
         android:id="@+id/update"
@@ -107,16 +170,23 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Update"
-        tools:layout_editor_absoluteX="258dp"
-        tools:layout_editor_absoluteY="556dp" />
-
+        android:layout_weight="1" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout14"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout12"
+        tools:layout_editor_absoluteX="1dp">
     <Button
         android:id="@+id/remove"
         android:textColor="@color/colorPrimaryDark"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Remove"
-        tools:layout_editor_absoluteX="163dp"
-        tools:layout_editor_absoluteY="637dp" />
-
+        android:layout_weight="1"
+       />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

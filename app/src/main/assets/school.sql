@@ -49,7 +49,7 @@ CREATE TABLE item (
     itemNo    VARCHAR (50) DEFAULT NULL,
     itemName     VARCHAR (100)  DEFAULT NULL,
     itemQuantity   VARCHAR (100) DEFAULT NULL,
-    itemPrice     FLOAT (50) DEFAULT NULL,
+    itemPrice     VARCHAR (50) DEFAULT NULL,
     itemDistributor VARCHAR(100) DEFAULT NULL,
     PRIMARY KEY(
     id)
