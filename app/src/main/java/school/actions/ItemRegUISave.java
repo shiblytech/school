@@ -13,6 +13,7 @@ public class ItemRegUISave extends SaveAction{
     public void execute() throws Exception {
         if(validateFields()){
             Item item = (Item) getViewModel("Item");
+              item.setId(2L);
             F.persist(item);
             addMessage("msg","Item saved successfully");
             updateViewModel("Item", null);
