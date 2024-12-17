@@ -47,7 +47,7 @@
 
 
     <EditText
-        android:id="@+id/item_itemNo"
+        android:id="@+id/item_itemid"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"

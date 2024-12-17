@@ -46,7 +46,6 @@ CREATE TABLE book (
 CREATE TABLE item (
 -- All tables must have this id field
     id        BIGINT (20)  NOT NULL,
-    itemNo    VARCHAR (50) DEFAULT NULL,
     itemName     VARCHAR (100)  DEFAULT NULL,
     itemQuantity   VARCHAR (100) DEFAULT NULL,
     itemPrice     VARCHAR (50) DEFAULT NULL,
