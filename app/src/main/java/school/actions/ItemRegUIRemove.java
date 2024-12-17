@@ -26,7 +26,7 @@ public class ItemRegUIRemove extends SaveAction {
                 addMessage("msg","No such item ID.");
                 return false;
             }
-            if(item.getItemNo() == null || item.getItemName() == null || item.getItemPrice() == null || item.getItemDistributor() == null){
+            if( item.getItemName() == null || item.getItemPrice() == null || item.getItemDistributor() == null){
                 addMessage("msg","First find a record.");
                 return false;
             }

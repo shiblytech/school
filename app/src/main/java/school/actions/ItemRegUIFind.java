@@ -9,7 +9,7 @@ public class ItemRegUIFind extends FBaseAction {
     @Override
     public void execute() throws Exception {
         Item s= (Item) getViewModel("Item");
-        addMessage("msg","Details:"+s.getItemNo()+"\n"+
+        addMessage("msg",
                 s.getItemName()+" "+s.getItemQuantity()+" "+s.getItemPrice()+" "+s.getItemDistributor());
     }
 }
