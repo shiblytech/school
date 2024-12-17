@@ -2,19 +2,13 @@ package school.model;
 import com.androix.model.Identifiable;
 
 public class Item extends Identifiable {
-    private String itemId;
+ 
     private String itemName;
     private String itemQuantity;
     private String itemPrice;
     private String itemDistributor;
 
-    public String getItemId() {
-        return itemId;
-    }
-
-    public void setItemId(String itemId) {
-        this.itemId = itemId;
-    }
+    
 
     public String getItemName() {
         return itemName;
