@@ -3,7 +3,7 @@ package school.actions;
 import com.androix.FBaseAction;
 
 import school.model.Item;
-import school.model.Student;
+import school.app.F;
 
 
 
@@ -14,6 +14,8 @@ public class ItemRegUIFind extends FBaseAction {
             Item item = (Item) getViewModel("Item");
             Long iId = item.getId();
             Item item1 = F.find(Item.class,iId);
+
+
             updateViewModel("Item",item1);
         }
     }
